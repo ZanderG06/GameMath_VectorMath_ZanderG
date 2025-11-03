@@ -747,8 +747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementX: 4
-  movementY: 4
-  movementZ: 0
+  movementY: 0
+  movementZ: 4
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
