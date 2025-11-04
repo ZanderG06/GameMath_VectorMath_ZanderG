@@ -9,6 +9,7 @@ public class VectorSum : MonoBehaviour
     static Vector3 cube2Movement;
     static Vector3 startPos;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
     public float step;
     public GameObject childCube;
     public GameObject enemy;
+    public float playerDotEnemyDir;
     static float scalar = 1f;
     private Vector3 startPos;
     private Vector3 enemyDir;
@@ -24,5 +25,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S)) scalar -= step;
 
         transform.position = startPos * scalar;
+
+        enemyDir = (enemy.transform.position - transform.position).normalized;
+
+        playerDotEnemyDir = Vector3.Dot(enemyDir, transform.position);
     }
 }
